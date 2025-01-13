@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Date</title>
+
+	<style type="text/css">
+		#dt{
+			color: black;
+			text-align: center;
+			margin-top: 60px;
+			font-size: 90px;
+			color: darkred ;
+			font-family: arial black;
+			text-shadow: 0px 0px 10px orangered;
+			-webkit- text-strock: 2px red;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 id="dt">00/00/0000</h1>
+
+	<script type="text/javascript">
+		let dt = document.getElementById("dt");
+
+		let dat = new Date();
+		let day = dat.getDate();
+		let mnth = dat.getMonth()+1;
+		let yr = dat.getFullYear();
+
+		dt.innerHTML = `${day}/${mnth}/${yr}`;
+
+	</script>
+
+</body>
+</html>

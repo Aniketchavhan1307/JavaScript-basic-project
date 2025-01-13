@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let ar =["Ramesh", "Suresh", "ganesh", "Mahesh"];
+
+		let arrUc = new Array();
+
+		document.write(ar +"<br>")
+
+		ar.forEach((ele)=>{
+			arrUc.push(`Hi my name is ${ele.toUpperCase()}`);
+
+
+		})
+
+		
+
+		arrUc.forEach((ele)=> {
+			document.write(ele);
+			document.write("<br>")
+		})
+
+
+	</script>
+</body>
+</html>

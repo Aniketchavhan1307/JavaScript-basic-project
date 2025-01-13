@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal details</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let person = {
+
+			name : "Aniket",
+			native : "Pune",
+			education : {
+				gradution : "Computer",
+				yop : 2024,
+				college : "PDEA"
+			},
+
+			subject : ["sql", "java", "web service", "java Script", "manual"],
+
+			hobbies : ["Watching movies", "Anime", "playing", "reading"],
+
+			strength : ["quick learner", "project management" + "focus"+ "hard worker"+ "Time management"]
+		}
+
+
+		let person1 = Object.create(person);
+
+		person1.name = "Ramesh";
+
+
+
+		document.write(person1.name +"<br>");
+
+		document.write("He has knowledge of following technologies."+ "<br>");
+
+		person1.subject.forEach((sub, cnt)=> document.write(++cnt + ". " + sub+"<br>"));
+
+		document.write(`Aniket has complete his gradution in ${person1.education.gradution} in the year ${person1.education.yop} from ${person1.education.college} college.`+"<br>")
+
+		document.write( "<br>");
+		
+		document.write("hobbies are : "+ "<br>")
+		person1.hobbies.forEach((hob)=> document.write(hob + "<br>"))
+
+
+		document.write("=============================="+"<br>")
+
+
+
+		document.write(person.name +"<br>");
+
+		document.write("He has knowledge of following technologies."+ "<br>");
+
+		person.subject.forEach((sub, cnt)=> document.write(++cnt + ". " + sub+"<br>"));
+
+		document.write(`Aniket has complete his gradution in ${person.education.gradution} in the year ${person.education.yop} from ${person.education.college} college.`+"<br>")
+
+		document.write( "<br>");
+
+
+		document.write("hobbies are : "+ "<br>")
+		person.hobbies.forEach((hob , ct)=> document.write(++ct + ". "+hob + "<br>"))
+
+
+
+	</script>
+
+</body>
+</html>

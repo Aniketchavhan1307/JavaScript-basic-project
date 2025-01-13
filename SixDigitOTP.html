@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6 digit otp generator</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// document.write(Math.round(Math.random()*9));
+		// let a = Math.round(Math.random()*9);
+		// let b = Math.round(Math.random()*9);
+
+		//document.write(`${a}${b}`);
+
+		// let otp = Math.round(Math.random()*1000000);
+		// let str =otp.toString();
+
+			let str = Math.round(Math.random()*1000000).toString();
+
+		let fotp =(str.length> 6? str.substr(0, str.length-1) : str)
+
+		document.write(fotp);
+		
+	</script>
+</body>
+</html>

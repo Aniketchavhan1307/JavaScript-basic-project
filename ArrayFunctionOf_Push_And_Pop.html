@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Push and pop function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr = [1,2,3,4,5,6,7,8,9];
+		console.log(arr);
+
+		arr[arr.length] = "hi";
+		console.log(arr);
+
+		arr.push("hello");    // add element at the last position
+		console.log("push : "+arr);
+
+		arr.pop();            // remove an element from the last position
+		console.log("pop :  "+arr);
+
+		arr.unshift("first");    // add an element at the first position
+		console.log("unshift :  "+arr);
+
+		arr.shift();					// remove an element from the first position
+		console.log("shift :  "+arr)
+
+	</script>
+
+</body>
+</html>

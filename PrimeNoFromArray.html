@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prime</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let numbers = [2,3,45,6,78,9,10,11];
+		let primeArr = numbers.filter((ele)=>isPrime(ele))
+
+		function isPrime(num)
+		{
+			let flag = true;
+			for(let i= 2; i<num; i++)
+			{
+				if(num%2==0)
+				{
+					flag = false;
+					break;
+
+				}
+			}
+
+
+
+
+			if(flag)
+			{
+				return num;
+			}
+		}
+
+		document.write(numbers+"<br>");
+		document.write(primeArr);
+	</script>
+
+</body>
+</html>

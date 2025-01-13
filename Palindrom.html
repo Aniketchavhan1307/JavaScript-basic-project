@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Palindrom</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		
+		// let num = 1234;
+		// let name= "Aniket"
+
+		// let rev = num.toString().split("").reverse().join("");
+
+		// let rev1 = name.split("").reverse().join("");
+
+		// document.write(rev+"<br>");
+		// document.write(rev1);
+
+
+			let isPalindrome = (person)=>{
+
+				 let rev = person.split("").reverse().join("");
+				 
+				 if(rev == person)
+				 {
+				 	return person;
+				 }
+			}
+
+		 let personName = ["ramesh","nitin", "ganesh","naman", "mahesh"];
+		 let pal = personName.filter((person))=>isPalindrome(person);
+
+		 document.write(personName+"<br>")
+
+		 document.write(pal+"<br>");
+
+
+	</script>
+
+</body>
+</html>
